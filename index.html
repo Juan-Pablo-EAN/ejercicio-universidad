@@ -13,6 +13,15 @@
             <h1>Registra un nuevo estudiante</h1>
         </div>
         <div>
+            <h3>Notas:</h3>
+            <ul>
+                <li>Se deben registrar 5 estudiantes mínimo para que el boton "Obtener resultados" sea visible</li>
+                <li>Dar click en "Guardar notas" por cada estudiante que se registre</li>
+                <li>No refrescar la página, esto haría que las notas registradas se eliminen</li>
+                <li>Es necesario llenar todos los campos de las notas antes de guardar</li>
+            </ul>
+        </div>
+        <div>
             <form>
                 <label for="nombre">Nombre del estudiante</label>
                 <input id="nombre" type="text">
@@ -28,8 +37,6 @@
                     <input type="number" id="nota1calculo" placeholder="Nota 1">
                     <input type="number" id="nota2calculo" placeholder="Nota 2">
                     <input type="number" id="nota3calculo" placeholder="Nota 3">
-                    <input type="number" id="nota4calculo" placeholder="Nota 4">
-                    <input type="number" id="nota5calculo" placeholder="Nota 5">
                 </form>
             </div>
             <div>
@@ -38,8 +45,6 @@
                     <input type="number" id="nota1progra" placeholder="Nota 1">
                     <input type="number" id="nota2progra" placeholder="Nota 2">
                     <input type="number" id="nota3progra" placeholder="Nota 3">
-                    <input type="number" id="nota4progra" placeholder="Nota 4">
-                    <input type="number" id="nota5progra" placeholder="Nota 5">
                 </form>
             </div>
             <div>
@@ -48,8 +53,6 @@
                     <input type="number" id="nota1fisica" placeholder="Nota 1">
                     <input type="number" id="nota2fisica" placeholder="Nota 2">
                     <input type="number" id="nota3fisica" placeholder="Nota 3">
-                    <input type="number" id="nota4fisica" placeholder="Nota 4">
-                    <input type="number" id="nota5fisica" placeholder="Nota 5">
                 </form>
             </div>
             <div>
@@ -58,8 +61,6 @@
                     <input type="number" id="nota1estadis" placeholder="Nota 1">
                     <input type="number" id="nota2estadis" placeholder="Nota 2">
                     <input type="number" id="nota3estadis" placeholder="Nota 3">
-                    <input type="number" id="nota4estadis" placeholder="Nota 4">
-                    <input type="number" id="nota5estadis" placeholder="Nota 5">
                 </form>
             </div>
             <div>
@@ -68,18 +69,21 @@
                     <input type="number" id="nota1funda" placeholder="Nota 1">
                     <input type="number" id="nota2funda" placeholder="Nota 2">
                     <input type="number" id="nota3funda" placeholder="Nota 3">
-                    <input type="number" id="nota4funda" placeholder="Nota 4">
-                    <input type="number" id="nota5funda" placeholder="Nota 5">
                 </form>
             </div>  
         </div>
         <div class="botones">
             <div>
-                <button>Guardar notas</button>
+                <button id="botonGuardar">Guardar notas</button>
             </div>
             <div>
-                <button>Obtener resultados</button>
+                <button id="botonResultados">Obtener resultados</button>
             </div>
+        </div>
+        <div class="resultados">
+            <table id="tabla">
+               
+            </table>
         </div>
     </div>
     <script src="app.js"></script>
